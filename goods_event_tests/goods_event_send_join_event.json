@@ -1,0 +1,18 @@
+{
+  "jsonrpc": "2.0",
+  "method": "icx_sendTransaction",
+  "params": {
+    "version": "0x3",
+    "stepLimit": "0x300000000000000000000000000",
+    "timestamp": "0x57c2de0ea9583",
+    "nid": "0x0",
+    "to": "cx91e848c5cf0f0ea6f8862f76ca82f1fac5fd1996",
+    "dataType": "call",
+    "data": {
+      "method": "join_event",
+      "params" : { "_join_message" : "7"
+                 }
+    }
+  },
+  "id": 0
+} 
