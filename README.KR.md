@@ -1,14 +1,14 @@
 # Overview
- > ¾ÆÀÌÄÜ Ä¿¹Â´ÏÄÉÀÌ¼ÇÆÀ¿¡¼­ ±ÂÁî ¹ß¼Û ÀÌº¥Æ®¿¡ »ç¿ëÇÒ ½º¸¶Æ® ÄÁÆ®·ºÆ® °³¹ß.
+ > ì•„ì´ì½˜ ì»¤ë®¤ë‹ˆì¼€ì´ì…˜íŒ€ì—ì„œ airdrop ë°œì†¡ ì´ë²¤íŠ¸ì— ì‚¬ìš©í•  ìŠ¤ë§ˆíŠ¸ ì»¨íŠ¸ë ‰íŠ¸ ê°œë°œ.
 ***
 # Requirement Description
-1. ¿î¿µÀÚ´Â ÀÌº¥Æ® ½ÃÀÛ/Á¾·á¸¦ ÁöÁ¤ÇÒ ¼ö ÀÖ´Ù.
-2. ÀÌº¥Æ® Á¾·á½Ã Âü¿©ÀÚ´Â ÀÌº¥Æ®¿¡ Âü¿©ÇÒ ¼ö ¾ø´Ù.
-3. ÀÌº¥Æ® Á¾·á ¼³Á¤ ÈÄ ½ÃÀÛ ¼³Á¤À¸·Î º¯°æÇÒ ¼ö ÀÖ´Ù.
-4. Âü¿©ÀÚ´Â Áú¹®¿¡ ´ëÇÑ º¸±â Áß ÇÑ°¡Áö¸¦ ¼±ÅÃÇÏ°í ¹øÈ£¸¸ ¸Þ¼¼Áö¸¦ º¸³»°í ÀÌº¥Æ®¿¡ Âü¿©ÇÑ´Ù.
-5. ÀÌº¥Æ®¿¡ Áßº¹ Âü¿©ÇÒ ¼ö ÀÖÀ¸³ª ´çÃ·½Ã Áßº¹ ´ë»óÀÌ µÉ ¼ö ¾ø´Ù.
-6. Áßº¹ Âü¿©½Ã ´äº¯ÀÌ ÃÖ½ÅÀ¸·Î °»½Å µÈ´Ù.
-7. ÀÌº¥Æ® ´çÃ·Àº ÇÑ¸í¾¿ ÃßÃ·ÇÑ´Ù.
+1. ìš´ì˜ìžëŠ” ì´ë²¤íŠ¸ ì‹œìž‘/ì¢…ë£Œë¥¼ ì§€ì •í•  ìˆ˜ ìžˆë‹¤.
+2. ì´ë²¤íŠ¸ ì¢…ë£Œì‹œ ì°¸ì—¬ìžëŠ” ì´ë²¤íŠ¸ì— ì°¸ì—¬í•  ìˆ˜ ì—†ë‹¤.
+3. ì´ë²¤íŠ¸ ì¢…ë£Œ ì„¤ì • í›„ ì‹œìž‘ ì„¤ì •ìœ¼ë¡œ ë³€ê²½í•  ìˆ˜ ìžˆë‹¤.
+4. ì°¸ì—¬ìžëŠ” ì§ˆë¬¸ì— ëŒ€í•œ ë³´ê¸° ì¤‘ í•œê°€ì§€ë¥¼ ì„ íƒí•˜ê³  ë²ˆí˜¸ë§Œ ë©”ì„¸ì§€ë¥¼ ë³´ë‚´ê³  ì´ë²¤íŠ¸ì— ì°¸ì—¬í•œë‹¤.
+5. ì´ë²¤íŠ¸ì— ì¤‘ë³µ ì°¸ì—¬í•  ìˆ˜ ìžˆìœ¼ë‚˜ ë‹¹ì²¨ì‹œ ì¤‘ë³µ ëŒ€ìƒì´ ë  ìˆ˜ ì—†ë‹¤.
+6. ì¤‘ë³µ ì°¸ì—¬ì‹œ ë‹µë³€ì´ ìµœì‹ ìœ¼ë¡œ ê°±ì‹  ëœë‹¤.
+7. ì´ë²¤íŠ¸ ë‹¹ì²¨ì€ í•œëª…ì”© ì¶”ì²¨í•œë‹¤.
 ***
 # Development Environment
 - OS : ubuntu 18.04 (Docker = Ubuntu 18.04.1 LTS)
@@ -19,55 +19,55 @@
 ```
 def owner_check(self) -> None:
 ```
-- SCORE ½ÇÇà ±ÇÇÑ È®ÀÎ.
+- SCORE ì‹¤í–‰ ê¶Œí•œ í™•ì¸.
 
 ```
 @external
 def event_start(self) -> None:
 ```
-- GoodsEvent SCORE¸¦ open ÇÔ. ¼ÒÀ¯ÀÚ¸¸ º¯°æ °¡´É.
+- GoodsEvent SCOREë¥¼ open í•¨. ì†Œìœ ìžë§Œ ë³€ê²½ ê°€ëŠ¥.
 
 ```
 @external
 def event_stop(self) -> None:
 ```
-- GoodsEvent SCORE¸¦ close ÇÔ. ¼ÒÀ¯ÀÚ¸¸ º¯°æ °¡´É.
+- GoodsEvent SCOREë¥¼ close í•¨. ì†Œìœ ìžë§Œ ë³€ê²½ ê°€ëŠ¥.
 
 ```
 @external
 def join_event(self, _join_message:int) -> None:
 ```
-- Âü¿©½Ã ¿É¼Å³ÎÇÑ °ªÀ» _join_message·Î ÀÔ·Â¹Þ°í ÀÌº¥Æ®¿¡ Âü¿©ÇÑ´Ù.
+- ì°¸ì—¬ì‹œ ì˜µì…”ë„í•œ ê°’ì„ _join_messageë¡œ ìž…ë ¥ë°›ê³  ì´ë²¤íŠ¸ì— ì°¸ì—¬í•œë‹¤.
 
 ```
 @external
 def raffle(self) -> str:
 ```
-- ¼ÒÀ¯ÀÚ¸¸ ¼öÇà °¡´É. ÀÌº¥Æ® ´çÃ·ÀÚ¸¦ ¼±ÅÃ. ÇÑ¹ø¿¡ ÇÑ¸íÀÇ ´çÃ·ÀÚ¸¦ »Ì´Â´Ù.
+- ì†Œìœ ìžë§Œ ìˆ˜í–‰ ê°€ëŠ¥. ì´ë²¤íŠ¸ ë‹¹ì²¨ìžë¥¼ ì„ íƒ. í•œë²ˆì— í•œëª…ì˜ ë‹¹ì²¨ìžë¥¼ ë½‘ëŠ”ë‹¤.
   
 ```
 @external(readonly=True)
 def count_join_user(self) -> str:
 ```
-- ÀÌº¥Æ® Âü¿©ÀÚ ¼ö¸¦ Ãâ·ÂÇÑ´Ù.
+- ì´ë²¤íŠ¸ ì°¸ì—¬ìž ìˆ˜ë¥¼ ì¶œë ¥í•œë‹¤.
 
 ```
 @external(readonly=True)
 def show_event_winner(self) -> str:
 ```
-- ÀÌº¥Æ® ´çÃ·ÀÚ ¼ö¿Í ´çÃ·ÀÚÀÇ Áö°© ÁÖ¼Ò¸¦ Ãâ·ÂÇÑ´Ù.
+- ì´ë²¤íŠ¸ ë‹¹ì²¨ìž ìˆ˜ì™€ ë‹¹ì²¨ìžì˜ ì§€ê°‘ ì£¼ì†Œë¥¼ ì¶œë ¥í•œë‹¤.
 
 ```
 @external(readonly=True)
 def check_join_message(self, _join_address:str = None) -> str:
 ```
-- Âü¿©ÀÚÀÇ ¿É¼Å³ÎÇÑ ÀÀ´ä °ªÀ» È®ÀÎÇÒ ¼ö ÀÖÀ½. Á¶È¸ÇÏ´Â Áö°©ÁÖ¼Ò°¡ ¾øÀ» °æ¿ì Æ®·£Àè¼ÇÀ» ¹ß»ý½ÃÅ² º»ÀÎÀÇ ÀÀ´ä °ªÀ» ¹ÝÈ¯ÇÏ¸ç 
-  Á¶È¸ÇÒ Áö°© ÁÖ¼Ò¸¦ _join_address·Î ÀÔ·ÂÇÏ¸é ÀÌº¥Æ® Âü¿©½Ã ÀÔ·ÂÇß´ø ¸Þ¼¼Áö¸¦ Ãâ·ÂÇÑ´Ù.
+- ì°¸ì—¬ìžì˜ ì˜µì…”ë„í•œ ì‘ë‹µ ê°’ì„ í™•ì¸í•  ìˆ˜ ìžˆìŒ. ì¡°íšŒí•˜ëŠ” ì§€ê°‘ì£¼ì†Œê°€ ì—†ì„ ê²½ìš° íŠ¸ëžœìž­ì…˜ì„ ë°œìƒì‹œí‚¨ ë³¸ì¸ì˜ ì‘ë‹µ ê°’ì„ ë°˜í™˜í•˜ë©° 
+  ì¡°íšŒí•  ì§€ê°‘ ì£¼ì†Œë¥¼ _join_addressë¡œ ìž…ë ¥í•˜ë©´ ì´ë²¤íŠ¸ ì°¸ì—¬ì‹œ ìž…ë ¥í–ˆë˜ ë©”ì„¸ì§€ë¥¼ ì¶œë ¥í•œë‹¤.
 ```
 @external(readonly=True)
 def check_event_state(self) -> str:
 ```
-- ÇöÀç ÀÌº¥Æ®ÀÇ open/close »óÅÂ¸¦ Ãâ·ÂÇÑ´Ù.
+- í˜„ìž¬ ì´ë²¤íŠ¸ì˜ open/close ìƒíƒœë¥¼ ì¶œë ¥í•œë‹¤.
 ***
 
 # Author
