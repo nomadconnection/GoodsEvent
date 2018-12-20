@@ -1,5 +1,5 @@
 # Overview
- > Developed smart contract to be used for event dispatching event from Icon Communication team.
+ > Developed smart contract to be used for airdrop event from ICON Communication team.
 ***
 # Requirement Description
 1. The operator can specify event start or stop.
