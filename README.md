@@ -3,12 +3,12 @@
 ***
 # Requirement Description
 1. The operator can specify event start or stop.
-2. Participants can not participate in the event at the end of the event.
+2. Participants can not participate in the event once the event has stopped.
 3. The operator can change the event stop setting to the start again.
 4. Participants participate in the event by submitting the selected number of views for the question.
-5. You can participate in the event in duplicate, but you can not be a duplicate when you win.
-6. The answer will be updated to the latest when participating in duplicate.
-7. Event winners are extracted and accumulated one by one at a time.
+5. You can participate multiple times.
+6. The answer will be updated to reflect the latest submission when participating multiple times.
+7. Event winners are selected one at a time.
 ***
 # Development Environment
 - OS : ubuntu 18.04 (Docker = Ubuntu 18.04.1 LTS)
@@ -37,13 +37,13 @@ def event_stop(self) -> None:
 @external
 def join_event(self, _join_message:int) -> None:
 ```
-- Enter the optional value _join_message when participating and participate in the event.
+- Enter the optional value _join_message when participating in the event.
 
 ```
 @external
 def raffle(self) -> str:
 ```
-- Only the owner is executable. Select the Winner of the Event.
+- Only the owner can execute. Select the Winner of the Event.
   
 ```
 @external(readonly=True)
